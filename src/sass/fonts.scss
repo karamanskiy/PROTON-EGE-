@@ -1,0 +1,10 @@
+@import "bourbon";
+
+@include font-face("Circe", "../fonts/Circe/Circe-Regular", normal, $file-formats: eot woff ttf);
+@include font-face("Circe", "../fonts/Circe/Circe-Bold", bold, $file-formats: eot woff ttf);
+@include font-face("Museo", "../fonts/Museo/MuseoCyrl-300", 300, $file-formats: eot woff woff2 ttf);
+@include font-face("Museo", "../fonts/Museo/MuseoCyrl-500", normal, $file-formats: eot woff woff2 ttf);
+@include font-face("Museo", "../fonts/Museo/MuseoCyrl-700", bold, $file-formats: eot woff woff2 ttf);
+@include font-face("Museo", "../fonts/Museo/MuseoCyrl-900", 900, $file-formats: eot woff woff2 ttf);
+
+// @import "../libs/font-awesome/scss/font-awesome";

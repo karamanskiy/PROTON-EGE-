@@ -1,0 +1,55 @@
+// @import 'src/libs/magnific-popup/dist/magnific-popup';
+@import 'src/libs/bootstrap-sass/assets/stylesheets/_bootstrap';
+// @import 'src/libs/font-awesome/scss/font-awesome';
+// @import 'src/libs/animate.css/animate.min';
+@import 'src/libs/bxslider-4/dist/jquery.bxslider.min';
+@import 'src/libs/arcticModal/arcticmodal/jquery.arcticmodal';
+// @import 'src/libs/owl.carousel/dist/assets/owl.carousel.min';
+// @import 'src/libs/owl.carousel/dist/assets/owl.theme.default.min';
+// @import 'src/libs/slick/dist/slick.scss';
+// @import 'src/libs/slick/dist/slick-theme.scss';
+
+
+.arcticmodal-container, .arcticmodal-overlay{	
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+}
+
+.arcticmodal-container{	
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-collapse: collapse;
+}
+
+:first-child+html .arcticmodal-container{	height: 100%}
+
+.arcticmodal-container_i
+{	margin: 0 auto;
+	height: 100%}
+
+.arcticmodal-container_i2
+{	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: middle}
+
+#hidden-box, .hidden-box {display: none}
+
+
+.bx-wrapper {
+	border: 0;
+	margin-bottom: 0;
+}
+
+.bx-wrapper .bx-viewport {
+  left: 0;
+  border: none;
+  box-shadow: none;
+}
+
