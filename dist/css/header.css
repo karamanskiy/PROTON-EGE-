@@ -1,0 +1,55 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "Circe", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000;
+  overflow-x: hidden !important;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 0 !important; }
+
+a, a:visited, a:focus {
+  text-decoration: none;
+  -webkit-transition: all .2s;
+  transition: all .2s; }
+
+a:hover {
+  text-decoration: none;
+  outline: none; }
+
+a:focus, .btn:focus {
+  outline: none;
+  text-decoration: none; }
+
+input:focus, textarea:focus {
+  outline: 0; }
+
+p {
+  font-size: 16px;
+  line-height: 1.2; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+ul, ol {
+  padding-left: 0; }
+
+li {
+  list-style: none; }
+
+.clear, .clearfix {
+  clear: both; }
+
+.main-wrapper {
+  overflow-x: hidden; }
+
+input, button, select, textarea {
+  outline: none; }
+
+/* Стили хедера */
