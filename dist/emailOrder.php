@@ -14,6 +14,9 @@ if (!empty($_POST)) {
 
 	$subject = 'Новая заявка с сайта - ПРОТОН';
 
+	if(strlen($class_obuch) < 5) {
+		$class_obuch = '';
+	}
 
 	/* сообщение */
 	$message = '
