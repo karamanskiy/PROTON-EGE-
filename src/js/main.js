@@ -5,9 +5,6 @@ $(function(){
 
 	var handler = function() {
 		
-		if(window.innerWidth < 992) {
-			$('.style_select').styler();
-		}
 
 	}; // end handler
 
@@ -23,7 +20,7 @@ $(function(){
 
 		var rellax = new Rellax('.parallax');
 
-		
+		$('.style_select').styler();
 
 		//navigation scroll to
 		$(".menu").on("click","a.scroll", function (e) {
