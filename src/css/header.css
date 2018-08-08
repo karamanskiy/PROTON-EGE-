@@ -14,7 +14,6 @@ body {
   margin-right: 0 !important; }
 
 a, a:visited, a:focus {
-  color: #000;
   text-decoration: none;
   -webkit-transition: all .2s;
   transition: all .2s; }
@@ -46,5 +45,8 @@ li {
 
 .clear, .clearfix {
   clear: both; }
+
+.main-wrapper {
+  overflow-x: hidden; }
 
 /* Стили хедера */

@@ -4,24 +4,19 @@ if (!empty($_POST)) {
 
 	$name = htmlspecialchars($_POST['name']);
 	$tel = htmlspecialchars($_POST['tel']);
-	$time = htmlspecialchars($_POST['time']);
-	// $data_obrab = htmlspecialchars($_POST['data_obrab']);
 
 
-	$subject = 'Новая заявка с сайта - Центр Рекламы';
+	$subject = 'Новая заявка с сайта - ПРОТОН';
 
 	/* сообщение */
 	$message = '
 	<html>
 	<head>
-	<title>Новая заявка с сайта - Центр Рекламы</title>
+	<title>Новая заявка с сайта - ПРОТОН</title>
 	</head>
 	<body>' .
 	(!empty($name) ? '<p><b>Имя:</b> ' . $name . '</p>' : '') .
 	(!empty($tel) ? '<p><b>Телефон:</b> ' . $tel . '</p>' : '') .
-	(!empty($time) ? '<p><b>Удобное время звонка:</b> ' . $time . '</p>' : '') .
-	'<p><b>Согласен/на на обработку данных.</b></p>' .
-	// (!empty($data_obrab) ? '<p><b>Согласие на обработку:</b> ' . $data_obrab . '</p>' : '') .
 	'<br/></body>
 	</html>
 	';

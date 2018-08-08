@@ -18,6 +18,10 @@ $(function(){
 		//отмена перетаскивания картинок
 		$("img, a").on("dragstart", function(e) { e.preventDefault(); });
 
+		var rellax = new Rellax('.parallax');
+
+		$('.style_select').styler();
+
 		//navigation scroll to
 		$(".menu").on("click","a.scroll", function (e) {
 			e.preventDefault();
@@ -34,8 +38,8 @@ $(function(){
 			var id = $(this).attr('id');
 			var data = $(this).serialize();
 
-			if($(this).find('input[name=data_obrab]').is(':checked') == false) {
-				alert('Пожалуйста, для отправки формы согласитесь на обработку персональных данных.');
+			if($(this).find('input[type="tel"]').val().length < 12 || $(this).find('input[name="name"]').val().length < 4) {
+				$('#error-modal').arcticmodal();
 				return;
 			}
 
@@ -57,37 +61,9 @@ $(function(){
 
 
 	// вызов всплывающего окна
-	$('.header__callback-btn').click(function(e) {e.preventDefault();$('#callback-modal').arcticmodal();});
+	$('.sect1__btn-vopros').click(function(e) {e.preventDefault();$('#callback-modal').arcticmodal();});
+	$('.soglashenie').click(function(e) {e.preventDefault();$('#soglashenie-modal').arcticmodal();});
 
-	//инициализация слайдеров
-	// $('.main-slider').slick({
-	// 	dots: true,
-	// 	speed: 500,
-	// 	fade: true,
-	// 	autoplay: true,
-	// 	autoplaySpeed: 5000,
-	// 	dotsClass: 'main-slider-dots'
-	// });
-
-
-	// SCROLL TOP BTN
-	$('.scroll-top').click(function() {
-		$('html, body').animate({
-			scrollTop: $('body').offset().top
-		}, 1000);
-		return false;
-	});
-
-	if($('.scroll-top').length){
-		$(window).scroll(function() {
-			var scr_top = $(window).scrollTop();
-			if (scr_top > 900) {
-				$('.scroll-top').addClass('active');
-			} else{
-				$('.scroll-top').removeClass('active');
-			}
-		});
-	}
 
 
 	// скрытие placeholder

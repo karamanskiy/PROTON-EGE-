@@ -75,8 +75,9 @@ gulp.task("minJsLibs", function(){
 				// 'src/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 				// 'src/libs/bootstrap-sass/assets/javascripts/bootstrap.min.js',
 				// 'src/libs/owl.carousel/dist/owl.carousel.min.js',
-				// 'src/libs/wow/dist/wow.min.js',
 				// 'src/libs/slick/dist/slick.min.js',
+				'src/libs/jQueryFormStyler/dist/jquery.formstyler.min.js',
+				'src/libs/rellax.min.js',
 				'src/libs/arcticModal/arcticmodal/jquery.arcticmodal.js'
 	])
 			.pipe(concat("libs.min.js")) // собираем все библиотеки в один файл
